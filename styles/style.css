@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote-box {
+  max-width: 50%;
+  max-height: 50%;
+  background-color: #ffffff;
+  padding: 4rem;
+}
+
+#text {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  color: cornflowerblue;
+}
+
+#author {
+  font-size: 1.3rem;
+  text-align: end;
+  padding-top: 0.5rem;
+  color: cornflowerblue;
+}
+
+#buttons {
+  width: 100%;
+  display: flex;
+  padding-top: 2rem;
+}
+
+#social-media-button {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1rem;
+}
+
+#change-quote-button {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+#new-quote {
+  min-width: 90px;
+  width: 40%;
+  max-width: 60%;
+  height: 45px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+#new-quote:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+#tweet-quote {
+  min-width: 90px;
+  width: 20%;
+  max-width: 60%;
+  height: 45px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+#tweet-quote:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+#signature {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+
+@keyframes changeQuoteBox {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

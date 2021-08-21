@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Random Quote Machine</title>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="quote-box">
+            </div>
+            <p id="signature">by Petr Chlapec</p>
+        </div>
+
+         <!-- Load React -->
+         <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+         <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+         <!-- Render React Components -->
+         <script type="text/babel" src="./src/Buttons.js"></script>
+         <script type="text/babel" src="./src/NewQuoteBtn.js"></script>
+         <script type="text/babel" src="./src/SocialMediaBtns.js"></script>
+         <script type="text/babel" src="./src/RandomQuote.js"></script>
+         <script type="text/babel">
+            ReactDOM.render(<RandomQuote />, document.querySelector("#quote-box"));
+        </script>
+    </body>
+</html>
